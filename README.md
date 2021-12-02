@@ -13,10 +13,8 @@ Algorithm that predicts who will win a UFC contest between two fighters. The dat
 * sklearn_pandas - provides a bridge between scikit-learn's machine learning methods and pandas Data Frames
   
 ## Running the Program
-* First, open the 'Data' folder, download UFCdata.zip, and extract UFCdata.csv (NOTE: there is another file in the folder titled, 'Unedited UFCdata.csv'. This is the original file that was returned when the UFCstats website was scraped using Beautiful Soup. I didn't chose to include all of the information about the contest/fighters that UFCstats.com provided, so I deleted some of the columns, only keeping the ones that I felt were relevant, and saved this new file as 'UFCdata.csv'. Should you desire, you can use 'Unedited UFCdata.csv' to include any other information that I may have deleted about the contest/fighters when I created 'UFCdata.csv')
-* Once the data is downloaded, run the entire program
-* Once the model has finished training itself, you will be asked if you would you like to have it make a predicition based on user-defined data. If you type 'no', the program will end. If you type 'yes', you will be prompted to enter a variety of information about each fighter in question. The program doesn't categorize fighters by name, it simply labels them as the red corner fighter and the blue corner fighter. If you are attempting to predict an upcoming UFC fight, then UFCstats.com will tell you which fighter is fighting out of the blue corner, and which is fighting out of the red. If this isn't a real-life fight, then the user determines who will be the red and blue fighters. Whether or not a fighter is assigned to be red or blue will not affect the predicition. 
-* Once all data pertaining to each fighter has been entered, the model will give its prediction as to who will win the fight.
+* First, open the 'Data' folder, download UFCdata.zip, and extract UFCdata.csv (NOTE: there is another file in the folder titled, 'Unedited_UFCdata.csv'. This is the original file that was returned when the UFCstats website was scraped using Beautiful Soup. I didn't chose to include all of the information about the contest/fighters that UFCstats.com provided, so I deleted some of the columns, only keeping the ones that I felt were relevant, and saved this new file as 'UFCdata.csv'. Should you desire, you can use 'Unedited UFCdata.csv' to include any other information that I may have deleted about the contest/fighters when I created 'UFCdata.csv')
+* Once the data is downloaded, supply the path for 'UFC_data.csv' on line 96 and run the entire program
 
 ![What](Images/prediction.png)
 
@@ -26,9 +24,6 @@ Algorithm that predicts who will win a UFC contest between two fighters. The dat
 ![What](Images/cm.png)
 
 * Prediction accuracy is represented by the following confusion matrix
-
-## Authors
-* **William Schmidt** - [Will's LikedIn](https://www.linkedin.com/in/william-schmidt-152431168/)
 
 ## Acknowledgments
 
